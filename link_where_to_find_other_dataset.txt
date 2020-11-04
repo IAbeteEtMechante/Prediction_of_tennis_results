@@ -1,0 +1,5 @@
+Our dataset is therefore a combination of two resources: (1) A publicly available
+play-by-play dataset, collected from basketball-reference.com; and (2) The publicly available interviews at ASAPsports.com, collected only for players that were
+6
+Oved*, Feder* and Reichart Predicting Actions from Interviews
+interviewed in more than three different seasons. I 
