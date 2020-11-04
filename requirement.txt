@@ -1,3 +1,5 @@
 python3 -m pip install --upgrade gensim
 python3 -m pip install -U stop_words
 python3 -m pip install -U googletrans
+ python3 -m pip install -U lightgbm
+
