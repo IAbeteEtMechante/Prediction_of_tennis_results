@@ -1,0 +1,5 @@
+
+description: It is weird that Td IDf is initialized on the whole dataset, not on train set only.
+This way it learns infomation from the test set.
+        
+
