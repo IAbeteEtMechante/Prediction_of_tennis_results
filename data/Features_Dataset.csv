@@ -1,0 +1,51 @@
+Match,ID,Sport,Interviewee,Opponent,Sex,Date,Rank,Rank Opp.,Int. Age,Opp. Age,Health,Psychics,Prev. Match,Confidence,Result,Final Result
+BG_Box_AleksandarPovetkin_vs_AnthonyDjoshua_NO,0,Box,Aleksandar Povetkin,Anthony Djoshua,Male,22.09.2018,34-1,21-0,39,28,H,5,N,3,TKO 7 (12),NO
+BG_Box_AndiRuiz_vs_AnthonyDjoshua_YES,1,Box,Andy Ruiz,Anthony Djoshua,Male,01.06.2019,32-1,22-0,29,29,H,5,N,4,TKO 7 (12),YES
+BG_Box_AnthonyDjoshua_vs_AleksandarPovetkin_YES,2,Box,Anthony Djoshua,Aleksandar Povetkin,Male,22.09.2018,21-0,34-1,28,39,H,5,N,4,TKO 7 (12),YES
+BG_Box_AnthonyDjoshua_vs_AndiRuiz_NO,3,Box,Anthony Djoshua,Andy Ruiz,Male,01.06.2019,22-0,32-1,29,29,H,5,N,4,TKO 7 (12),NO
+BG_Box_AntonyDjoshua_vs_VladimirKlichko_YES,4,Box,Anthony Djoshua,Wladimir Klitschko,Male,29.04.2017,18-0,64-4,27,41,H,5,N,4,TKO 11 (12),YES
+BG_Box_BogdanDinu_vs_KubratPulev_NO,5,Box,Bogdan Dinu,Kubrat Pulev,Male,23.03.2019,18-1,26-1,32,37,H,5,L,4,KO 7 (10),NO
+BG_Box_CvetozarIliev_vs_GrigorSarahunan_NO,6,Box,Tsvetozar Iliev,Grigor Saruhanian,Male,03.05.2019,6-23-4,5-5,34,32,H,5,N,3,UD,NO
+BG_Box_DerekChisora_vs_KubratPulev_NO,7,Box,Dereck Chisora,Kubrat Pulev,Male,07.05.2016,25-5,22-1,32,35,H,5,N,5,SD 12,NO
+BG_Box_HuiFury_vs_KubratPulev_NO,8,Box,Hughie Fury,Kubrat Pulev,Male,27.10.2018,21-1,25-1,24,37,H,5,N,5,UD 12,NO
+BG_Box_KevinDjonson_vs_KubratPulev_NO,9,Box,Kevin Johnson,Kubrat Pulev,Male,28.04.2017,30-7-1,24-1,37,35,H,5,N,5,UD 12,NO
+BG_Box_KubratPulev_vs_BogdanDinu_YES,10,Box,Kubrat Pulev,Bogdan Dinu,Male,23.03.2019,26-1,18-1,37,32,H,5,W,4,KO 7 (10),YES
+BG_Box_KubratPulev_vs_DerekChisora_YES,11,Box,Kubrat Pulev,Dereck Chisora,Male,07.05.2016,22-1,25-5,35,32,H,5,N,4,SD 12,YES
+BG_Box_KubratPulev_vs_HuiFury_YES,12,Box,Kubrat Pulev,Hughie Fury,Male,27.10.2018,25-1,21-1,37,24,H,5,N,4,UD 12,YES
+BG_Box_KubratPulev_vs_KevinDjonson_YES,13,Box,Kubrat Pulev,Kevin Johnson,Male,28.04.2017,24-1,30-7-1,35,37,H,5,N,4,UD 12,YES
+BG_Box_KubratPulev_vs_MorisHaris_YES,14,Box,Kubrat Pulev,Maurice Harris,Male,05.12.2015,21-1,26-20-3,34,39,H,5,N,4,KO 1 (8),YES
+BG_Box_KubratPulev_vs_TonyTompson_YES,15,Box,Kubrat Pulev,Tony Thompson,Male,24.08.2013,17-0,38-3,32,41,H,5,N,4,UD 12,YES
+BG_Box_KubratPulev_vs_WladimirKlitschko_NO,16,Box,Kubrat Pulev,Wladimir Klitschko,Male,15.11.2014,20-0,62-3,33,38,H,5,N,5,KO 5 (12),NO
+BG_Box_TaysonFury_vs_FranceskoPianeta_YES,17,Box,Tyson Fury,Francesco Pianeta,Male,18.08.2018,26-0,35-4-1,30,33,H,5,N,5,UD 10,YES
+BG_Box_TervelPulev_vs_LeonardoBrusseze_YES,18,Box,Tervel Pulev,Leonardo Bruzzese,Male,27.10.2018,11-0,19-5,35,35,H,5,N,4,KO 2 (12),YES
+BG_Box_WladimirKlichko_vs_AnthonyDjoshua_NO,19,Box,Wladimir Klitschko,Anthony Djoshua,Male,29.04.2017,64-4,18-0,41,27,H,5,N,3,TKO 11 (12),NO
+BG_Box_WladimirKlitschko_vs_KubratPulev_YES,20,Box,Wladimir Klitschko,Kubrat Pulev,Male,15.11.2014,62-3,20-0,38,33,A,5,N,4,KO 5 (12),YES
+BG_MMA_AnitaDoganova_vs_AleksandraToncheva_NO,21,MMA,Anita Doganova,Aleksandra Toncheva,Female,02.08.2018,2-1,0-1,28,27,H,5,N,2,UD,NO
+BG_MMA_BlagoiIvanov_vs_BenRotuel_YES,22,MMA,Blagoi Ivanov,Ben Rothwell,Male,09.03.2019,16-2 ,36-10,32,37,H,5,N,5,UD,YES
+BG_MMA_DanielZlatkov_vs_AtanasMihaylov_YES,23,MMA,Daniel Zlatkov,Atanas Mihaylov,Male,13.01.2018,0-0,0-0,28,39,H,5,N,5,TKO,YES
+BG_MMA_DeyanTopalski_vs_MuslimSalihov_NO,24,MMA,Deyan Topalski,Muslim Salihov,Male,09.04.2013,8-1,2-1,29,28,A,5,N,3,UD,NO
+BG_MMA_SvetlozarSavov_vs_PiotrStrus_NO,25,MMA,Svetlozar Savov,Piotr Strus,Male,08.06.2019,18-6,13-5-2,30,30,H,5,N,4,UD,NO
+BG_Tennis_AndyMury_vs_GrigorDimitrov_YES,26,Tennis,Andy Mury,Grigor Dimitrov,Male,25.01.2015,2,28,27,23,H,4,W,4,"3:1 (6:4,6:7,6:3,7:5)",YES
+BG_Tennis_CvetanaPironkova_vs_CarolineWozniacki_NO,27,Tennis,Cvetana Pironkova,Caroline Wozniacki,Female,26.03.2010,35,1,22,19,H,3,L,2,"1:2 (6:3,3:6,4:6)",NO
+BG_Tennis_DavidGofen_vs_GrigorDimitrov_NO,28,Tennis,David Gofen,Grigor Dimitrov,Male,15.11.2017,7,3,26,26,H,3,W,2,"0:2 (0:6,2:6)",NO
+BG_Tennis_DominicThiem_vs_GrigorDimitrov_NO,29,Tennis,Dominic Thiem,Grigor Dimitrov,Male,16.11.2017,5,3,2,26,H,4,N,3,"1:2 (3:6,7:5,5:7)",NO
+BG_Tennis_FabioFonini_vs_GrigorDimitrov_YES,30,Tennis,Fabio Fonini,Grigor Dimitrov,Male,13.05.2015,21,28,27,23,H,4,L,4,"2:1 (7:6,4:6,6:0)",YES
+BG_Tennis_GrigorDimitrov_vs_DavidGofen_YES,31,Tennis,Grigor Dimitrov,David Gofen,Male,15.11.2017,3,7,26,26,H,4,L,3,"2:0 (6:0,6:2)",YES
+BG_Tennis_GrigorDimitrov_vs_GaelMontfis_YES,32,Tennis,Grigor Dimitrov,Gael Montfis,Male,28.11.2015,28,24,24,28,H,3,W,3,"2:0 (6:3,6:4)",YES
+BG_Tennis_GrigorDimitrov_vs_Jerzy Janowicz_YES,33,Tennis,Grigor Dimitrov,Jerzy Janowicz,Male,09.02.2017,3,150,26,26,H,3,N,3,"2:1 (4:6,6:3,7:5)",YES
+BG_Tennis_GrigorDimitrov_vs_MarcosBagdatis_YES,34,Tennis,Grigor Dimitrov,Marcos Bagdatis,Male,02.11.2015,28,46,24,30,H,4,W,3,"3:2 (4:6,6:3,3:6,6:3,6:3)",YES
+BG_Tennis_GrigorDimitrov_vs_NikolasBasilashvili_YES,35,Tennis,Grigor Dimitrov,Nikolas Basilashvili,Male,11.02.2017,49,11,26,25,H,3,N,3,"2:0 (6:1, 6:3)",YES
+BG_Tennis_GrigorDimitrov_vs_RogerFederer_NO,36,Tennis,Grigor Dimitrov,Roger Federer,Male,10.07.2017,9,5,26,35,H,3,L,2,"0:3 (2:6,4:6,2:6)",NO
+BG_Tennis_GrigorDimitrov_vs_StanWawrinka_NO,37,Tennis,Grigor Dimitrov,Stan Wawrinka,Male,31.05.2019,52,28,28,34,A,3,L,3,"0:3 (6:7,6:7,6:7)",NO
+BG_Tennis_GrigorDimitrov_vs_TommyRobredo_YES,38,Tennis,Grigor Dimitrov,Tommy Robredo,Male,31.05.2017,11,271,26,35,H,3,N,3,"3:0 (6:3,6:4,7:5)",YES
+BG_Tennis_GrigorDimitrov_vs_ViktorTroicky_YES,39,Tennis,Grigor Dimitrov,Viktor Troicky,Male,10.02.2017,37,9,25,31,H,4,N,4,"2:0 (6:3,6:3)",YES
+BG_Tennis_MariaSharapova_vs_CvetanaPironkova_YES,40,Tennis,Maria Sharapova,Cvetana Pironkova,Female,28.06.2012,2,42,25,24,H,3,W,3,"2:1 (7:6,6:7,6:0)",YES
+BG_Tennis_MarioCilic_vs_GrigorDimitrov_NO,41,Tennis,Mario Cilic,Grigor Dimitrov,Male,29.05.2019,18,49,30,28,H,4,N,4,"2:3 (7:6,4:6,6:4,6:7,3:6)",NO
+BG_Tennis_NikolasBasilashvili_vs_GrigorDimitrov_NO,42,Tennis,Nikolas Basilashvili,Grigor Dimitrov,Male,11.02.2017,16,49,25,26,H,2,N,1,"0:2 (1:6, 3:6)",NO
+BG_Tennis_NovakDjokovic_vs_RafaelNadal_YES,43,Tennis,Novak Djokovic,Rafael Nadal,Male,27.01.2019,1,2,32,33,H,3,W,3,"3:0 (6:3,6:2,6:3)",YES
+BG_Tennis_RafaelNadal_vs_GrigorDimitrov_YES,44,Tennis,Rafael Nadal,Grigor Dimitrov,Male,18.04.2018,2,49,33,28,A,4,W,3,"2:0 (6:4,6:1)",YES
+BG_Tennis_RogerFederer_vs_DominicThiem_NO,45,Tennis,Roger Federer,Dominic Thiem,Male,10.05.2019,3,4,38,25,H,3,L,2,"1:2 (6:3,6:7,4:6)",NO
+BG_Tennis_RogerFederer_vs_GrigorDimitrov_YES,46,Tennis,Roger Federer,Grigor Dimitrov,Male,10.07.2017,5,9,35,26,S,3,W,3,"3:0 (6:2,6:4,6:2)",YES
+BG_Tennis_StanWawrinka_vs_GrigorDimitrov_YES,47,Tennis,Stan Wawrinka,Grigor Dimitrov,Male,31.05.2019,28,52,34,28,A,3,W,3,"3:0 (7:6,7:6,7:6)",YES
+BG_Tennis_StefanosCicipas_vs_RafaelNadal_NO,48,Tennis,Stefanos Cicipas,Rafael Nadal,Male,29.04.2018,6,2,19,31,H,3,N,3,"0:2 (2:6,1:6)",NO
+BG_Tennis_TommyRobredo_vs_GrigorDimitrov_NO,49,Tennis,Tommy Robredo,Grigor Dimitrov,Male,31.05.2017,271,11,35,26,H,5,Y,4,"0:3 (3:6,4:6,5:7)",NO
