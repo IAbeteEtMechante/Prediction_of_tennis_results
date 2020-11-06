@@ -1,0 +1,128 @@
+<div id="playerProfileHero" style="background-image: url('/-/media/tennis/players/profile-hero/by-country/rus.jpg?sc=0&amp;hash=3F079B995A776FD929934D0656ED74EA')" class="player-profile-hero">
+    <div class="player-profile-hero-image">
+        <img src="/-/media/tennis/players/gladiator/2020/rublev_full_ao20.png?sc=0&amp;hash=B8A4FD7D92370EBC35E9F97533F478CC" alt="Andrey Rublev">
+    </div>
+    <div class="player-profile-hero-overflow">
+        <div class="player-profile-hero-dash">
+            <div class="inner-wrap">
+                <div class="player-profile-hero-name">
+                    <div class="first-name">Andrey</div>
+                    <div class="last-name">Rublev</div>
+                </div>
+                <div class="player-profile-hero-audio ">
+<audio id="playerProfileHeroAudio" controls="controls">
+                        <source src="" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="player-profile-hero-ranking">
+                    <div class="player-ranking-position">
+                        <div class="data-label">
+                            <div class="data-label-text">
+
+                                        <span class="hero-rank-label">Singles</span>
+                                Ranking
+
+
+                            </div>
+                        </div>
+                        <div class="data-number" style="margin-left: 10px">
+8                        </div>
+                    </div>
+                        <div class="player-flag">
+                            <div class="player-flag-img">
+                                <img src="/en/~/media/images/flags/rus.svg">
+                            </div>
+                            <div class="player-flag-code">RUS</div>
+                        </div>
+                </div>
+                
+    <div class="player-profile-hero-social">
+                <a href="https://www.instagram.com/andreyrublev/" class="icon-instagram-circleless" ga-label="https://www.instagram.com/andreyrublev/" ga-action="Click" ga-category="Outbound" ga-use="true" target="_blank"></a>
+                <a href="https://twitter.com/AndreyRublev97" class="icon-twitter-circleless" ga-label="https://twitter.com/AndreyRublev97" ga-action="Click" ga-category="Outbound" ga-use="true" target="_blank"></a>
+                <a href="https://andrey-rublev.com/" class="official-website-link external" ga-label="https://andrey-rublev.com/" ga-action="Click" ga-category="Outbound" ga-use="true" target="_blank">
+                    Visit Official Site
+                </a>
+
+    </div>
+            </div>
+        </div>
+        <div class="player-profile-hero-table">
+            <div class="inner-wrap">
+                <table>
+                    <tbody><tr>
+                        <td>
+                            <div class="wrap">
+                                    <div class="table-big-label" style="width: 50%">Age</div>
+                                <div class="table-big-value">
+23                                        <span class="table-birthday-wrapper">
+                                            <span class="table-birthday">
+                                                (1997.10.20)
+                                            </span>
+                                        </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="wrap">
+                                <div class="table-big-label" style="width: 45%">Turned Pro</div>
+                                <div class="table-big-value">
+2014                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="wrap">
+                                <div class="table-big-label" style="width: 30%">Weight</div>
+                                <div class="table-big-value">
+                                        <span class="table-weight-lbs-wrapper"><span class="table-weight-lbs">165</span><span class="table-weight-lbs-label">lbs</span></span><span class="table-weight-kg-wrapper">(75kg)</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="wrap">
+                                <div class="table-big-label" style="width: 30%">Height</div>
+                                <div class="table-big-value">
+                                        <span class="table-height-ft-wrapper"><span class="table-height-ft">6'2"</span></span><span class="table-height-cm-wrapper">(188cm)</span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="wrap">
+                                <div class="table-label" style="width:40%">
+                                    Birthplace
+                                </div>
+                                <div class="table-value">
+                                    Moscow, Russia
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="wrap">
+                                <div class="table-label" style="width: 30%">Residence</div>
+                                <div class="table-value">Moscow, Russia</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="wrap">
+                                <div class="table-label" style="width: 30%">
+                                    Plays
+                                </div>
+                                <div class="table-value">
+Right-Handed, Two-Handed Backhand                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="wrap">
+                                <div class="table-label" style="width:30%">Coach</div>
+                                <div class="table-value">
+                                    Fernando Vicente
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+        </div>
+    </div>
+</div>
