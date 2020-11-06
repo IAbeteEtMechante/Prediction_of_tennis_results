@@ -11,7 +11,6 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn import metrics
 from PIL import Image
-from sklearn.model_selection import train_test_split
 # import matplotlib.pyplot as plt
 
 import numpy as np
@@ -45,48 +44,22 @@ def get_dataset(dataset_name):
 
     return X,y
 
-def get_data(dataset_type):
+def get_type(dataset_type):
     if dataset_type == "Text Analysis":
         df = pd.read_csv("../data/interviews/interviews_en.csv")
         df_class = pd.read_csv('../data/target.csv', index_col=0)
         df['Class'] = df_class['Class']
-        # split X and y into training and testing sets
-        X_train, X_test, y_train, y_test = train_test_split(df.text, df.Class, random_state=42)
-        # st.write("X_train.shape : ", X_train.shape)
-        # st.write("X_test.shape : ", X_test.shape)
-        vect = CountVectorizer(min_df =1, stop_words='english' ,token_pattern=r'\b[a-zA-Z]+\b')
-        X_train_dtm = vect.fit_transform(X_train)
-        X_test_dtm = vect.transform(X_test)
-        X_interview = [interview]
-        X_interview_dtm = vect.transform(X_interview)
-        #renaming
-        X_train, X_test, X_interview = X_train_dtm,X_test_dtm,X_interview_dtm
 
+        dataset_name = st.sidebar.selectbox("Select Dataset", ("Iris","Breast Cancer", "Wine dataset"))
+        classfier_name = st.sidebar.selectbox("Select Classifier", ("KNN","SVM","Random Forest"))
     else:
+        dataset_name = st.sidebar.selectbox("Select Dataset", ("Diabetes","Breast Cancer", "Wine dataset"))
+        classfier_name = st.sidebar.selectbox("Select Classifier", ("Regression","SVM","Random Forest"))
 
-        df = pd.read_csv("../data/interviews/interviews_en.csv")
-        df_class = pd.read_csv('../data/target.csv', index_col=0)
-        df['Class'] = df_class['Class']
-        # split X and y into training and testing sets
-        X_train, X_test, y_train, y_test = train_test_split(df.text, df.Class, random_state=42)
-        # st.write("X_train.shape : ", X_train.shape)
-        # st.write("X_test.shape : ", X_test.shape)
-        vect = CountVectorizer(min_df =1, stop_words='english' ,token_pattern=r'\b[a-zA-Z]+\b')
-        X_train_dtm = vect.fit_transform(X_train)
-        X_test_dtm = vect.transform(X_test)
-        X_interview = [interview]
-        X_interview_dtm = vect.transform(X_interview)
-        #renaming
-        X_train, X_test, X_interview = X_train_dtm,X_test_dtm,X_interview_dtm
-
-    return X_train, X_test, X_interview, y_train, y_test
+    return dataset_name, classfier_name
     
-X_train, X_test, X_interview, y_train, y_test = get_data(dataset_type)
-#for debugging:
-# st.write(X_train.shape, X_test.shape, X_interview.shape, y_train.shape, y_test.shape)
+dataset_name, classfier_name = get_type(dataset_type)
 
-
-classfier_name = st.sidebar.selectbox("Select Classifier", ("Regression","SVM","Random Forest"))
 
 def add_parameter_ui(clf_name):
     params = dict()
@@ -105,7 +78,6 @@ def add_parameter_ui(clf_name):
 
 params = add_parameter_ui(classfier_name)
 
-
 def get_classifier(clf_name,params):
     if clf_name == "KNN":
         clf = KNeighborsClassifier(n_neighbors=params["K"])
@@ -118,15 +90,24 @@ def get_classifier(clf_name,params):
 
 clf = get_classifier(classfier_name,params)
 
-#classification
-
-if dataset_type != "-":
-
+def run_text_analysis():
+    df = pd.read_csv("../data/interviews/interviews_en.csv")
+    df_class = pd.read_csv('../data/target.csv', index_col=0)
+    df['Class'] = df_class['Class']
+    # split X and y into training and testing sets
+    from sklearn.model_selection import train_test_split
+    X_train, X_test, y_train, y_test = train_test_split(df.text, df.Class, random_state=42)
+    # st.write("X_train.shape : ", X_train.shape)
+    # st.write("X_test.shape : ", X_test.shape)
+    vect = CountVectorizer(min_df =1, stop_words='english' ,token_pattern=r'\b[a-zA-Z]+\b')
+    X_train_dtm = vect.fit_transform(X_train)
     logReg = LogisticRegression(solver='liblinear')
-    logReg.fit(X_train,y_train)
+    logReg.fit(X_train_dtm,y_train)
 
     #predict winner on our interview:
-    result = logReg.predict(X_interview)
+    X_sample = [interview]
+    X_sample_dtm = vect.transform(X_sample)
+    result = logReg.predict(X_sample_dtm)
     # result = [0]
     if result[0] == 1:
         st.write("The winner will be: ", player)
@@ -140,15 +121,17 @@ if dataset_type != "-":
         st.image(image_object, caption='WINNEEEEEERR')        
 
     #confidence level
-
-    y_pred_class = logReg.predict(X_test)
+    X_test_dtm = vect.transform(X_test)
+    y_pred_class = logReg.predict(X_test_dtm)
     metrics.accuracy_score(y_test, y_pred_class)
     st.write("Confidence Level: ", metrics.accuracy_score(y_test, y_pred_class))
 
 
 
+#classification
 
-    
+if dataset_type == "Text Analysis":
+    run_text_analysis()
 
 
 
