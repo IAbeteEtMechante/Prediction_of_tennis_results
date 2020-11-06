@@ -12,7 +12,6 @@ from sklearn.linear_model import LogisticRegression
 from sklearn import metrics
 from PIL import Image
 from sklearn.model_selection import train_test_split
-
 # import matplotlib.pyplot as plt
 
 import numpy as np
@@ -411,53 +410,17 @@ if dataset_type != "-":
 
     #predict winner on our interview:
     result = clf.predict(X_interview)
-    
-    
-    
-    # Initiate image search
-    from google_images_search import GoogleImagesSearch
-    gis = GoogleImagesSearch('AIzaSyChIrxfx0IX8pfEHKRAijzTWBwCaYk3kqM', '24e79fde2bf5be8b8')
-    
-    # define search params for player and opponent:
-    _search_params_player = {
-        'q': player.lower(),
-        'num': 1,
-        'safe': 'off',
-        'fileType': 'jpeg',
-        'imgType': 'imgTypeUndefined',
-        'imgSize': 'imgSizeUndefined',
-        'imgDominantColor': 'imgDominantColorUndefined',
-        'rights': 'off'
-    }
-
-    _search_params_opponent = {
-        'q': opponent.lower(),
-        'num': 1,
-        'safe': 'off',
-        'fileType': 'jpeg',
-        'imgType': 'imgTypeUndefined',
-        'imgSize': 'imgSizeUndefined',
-        'imgDominantColor': 'imgDominantColorUndefined',
-        'rights': 'off'
-    }
-    
-    # Download image for player and opponent
-    gis.search(search_params=_search_params_player, path_to_dir='Images', 
-               custom_image_name=player.lower())
-    gis.search(search_params=_search_params_opponent, path_to_dir='Images', 
-               custom_image_name=opponent.lower())
-    
     # result = [0]
     if result[0] == 1:
         st.write("The winner will be: ", player)
-        image_file = './Images/' + player.lower()+'.jpg'
+        image_file = './Images/' + player.lower()+'.jpeg'
         image_object = Image.open(image_file)
         st.image(image_object, caption='WINNEEEEEERR')
         y_pred_prob = clf.predict_proba(X_interview)[:, 1]
         st.write("Probability of winning", y_pred_prob[0])
     else:
         st.write("The winner will be: ", opponent)
-        image_file = './Images/' + opponent.lower()+'.jpg'
+        image_file = './Images/' + opponent.lower()+'.jpeg'
         image_object = Image.open(image_file)
         st.image(image_object, caption='WINNEEEEEERR')     
         y_pred_prob = clf.predict_proba(X_interview)[:, 1]
@@ -471,24 +434,10 @@ if dataset_type != "-":
     st.write("Model accuracy: ", metrics.accuracy_score(y_test, y_pred_class))
 
 
-    
-    
-
 
 
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
 
 
 # X_train, X_test, y_train, y_test = train_test_split(X,y,test_size= 0.2, random_state =1234)
