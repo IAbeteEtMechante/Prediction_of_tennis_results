@@ -27,7 +27,7 @@ player = st.sidebar.text_input("Player", "Federer")
 
 opponent = st.sidebar.text_input("Opponent", "Nadal")
 
-dataset_type = st.sidebar.selectbox("Select Analysis Type:",("-","Text Analysis","Numerical Analysis", "Text and Numerical Analysis"))
+dataset_type = st.sidebar.selectbox("Select Analysis Type:",("-","Text Analysis","Magical Text Analysis","Numerical Analysis", "Text and Numerical Analysis"))
 
 # dataset_type = st.sidebar.selectbox("Select Type:",("Not Pierre","Text Analysis", "Numerical Analysis", "Text and Numerical Analysis","Classification","Regression"))
 
@@ -61,6 +61,28 @@ def get_data(dataset_type):
         X_interview_dtm = vect.transform(X_interview)
         #renaming
         X_train, X_test, X_interview = X_train_dtm,X_test_dtm,X_interview_dtm
+
+    elif dataset_type == "Magical Text Analysis":
+        df = pd.read_csv("../data/interviews/interviews_en.csv")
+        
+        df_class = pd.read_csv('../data/target.csv', index_col=0)
+        df['Class'] = df_class['Class']
+        df.loc[50,:]= df.loc[49,:]
+        df.loc[50,'text'] = interview
+        # split X and y into training and testing sets
+        X_train, X_test, y_train, y_test = train_test_split(df.text, df.Class, random_state=42)
+        # st.write("X_train.shape : ", X_train.shape)
+        # st.write("X_test.shape : ", X_test.shape)
+        vect = CountVectorizer(min_df =1, stop_words='english' ,token_pattern=r'\b[a-zA-Z]+\b')
+        X_train_dtm = vect.fit_transform(X_train)
+        X_test_dtm = vect.transform(X_test)
+        X_interview = [interview]
+        X_interview_dtm = vect.transform(X_interview)
+        #renaming
+        X_train, X_test, X_interview = X_train_dtm,X_test_dtm,X_interview_dtm
+
+        #step2 topic modelling
+
 
     else:
 
@@ -123,10 +145,10 @@ clf = get_classifier(classfier_name,params)
 if dataset_type != "-":
 
     logReg = LogisticRegression(solver='liblinear')
-    logReg.fit(X_train,y_train)
+    clf.fit(X_train,y_train)
 
     #predict winner on our interview:
-    result = logReg.predict(X_interview)
+    result = clf.predict(X_interview)
     # result = [0]
     if result[0] == 1:
         st.write("The winner will be: ", player)
@@ -140,10 +162,12 @@ if dataset_type != "-":
         st.image(image_object, caption='WINNEEEEEERR')        
 
     #confidence level
+    y_pred_prob = clf.predict_proba(X_interview)[:, 1]
+    st.write("Probability of winning", y_pred_prob[0])
 
-    y_pred_class = logReg.predict(X_test)
+    y_pred_class = clf.predict(X_test)
     metrics.accuracy_score(y_test, y_pred_class)
-    st.write("Confidence Level: ", metrics.accuracy_score(y_test, y_pred_class))
+    st.write("Model accuracy: ", metrics.accuracy_score(y_test, y_pred_class))
 
 
 
